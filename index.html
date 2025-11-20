@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorlin Jose | Digital Humanities Researcher</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Merriweather:ital,wght@0,300;0,700;1,300&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- CSS VARIABLES --- */
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #2c3e50;
+            --accent-color: #2c3e50; /* Navy Blue */
+            --highlight-color: #c0392b; /* Academic Red/Rust */
+            --code-font: 'Fira Code', monospace;
+            --body-font: 'Inter', sans-serif;
+            --serif-font: 'Merriweather', serif;
+        }
+
+        /* --- RESET & BASE STYLES --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--body-font);
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        a { text-decoration: none; color: var(--accent-color); transition: 0.3s; }
+        a:hover { color: var(--highlight-color); }
+        
+        /* --- LAYOUT UTILITIES --- */
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 60px 0; border-bottom: 1px solid #e0e0e0; }
+        
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 { font-family: var(--serif-font); color: var(--accent-color); }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        h2 { font-size: 1.8rem; margin-bottom: 1.5rem; border-left: 4px solid var(--highlight-color); padding-left: 15px; }
+        h3 { font-size: 1.2rem; font-weight: 700; }
+        .subtitle { font-family: var(--code-font); color: #666; font-size: 0.9rem; }
+        
+        /* --- HERO SECTION --- */
+        header {
+            padding: 80px 0;
+            text-align: center;
+            background: #fff;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ddd; /* Placeholder color */
+            margin: 0 auto 20px;
+            object-fit: cover;
+            border: 3px solid var(--bg-color);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .social-links { margin-top: 20px; }
+        .social-links a { margin: 0 10px; font-size: 1.5rem; color: #555; }
+
+        /* --- CONTENT LISTS --- */
+        .timeline-item, .pub-item { margin-bottom: 25px; }
+        .date { font-family: var(--code-font); font-size: 0.85rem; color: #7f8c8d; background: #eef2f3; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 5px; }
+        .pub-title { font-weight: 700; display: block; }
+        .pub-journal { font-style: italic; color: #555; }
+        
+        /* --- TAGS --- */
+        .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            margin-right: 5px;
+            background: #e1e8ed;
+            border-radius: 15px;
+            font-family: var(--code-font);
+            color: #333;
+        }
+
+        /* --- FOOTER --- */
+        footer { text-align: center; padding: 40px 0; font-size: 0.8rem; color: #777; }
+        
+        /* --- MOBILE RESPONSIVE --- */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .container { padding: 0 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="https://ui-avatars.com/api/?name=Jorlin+Jose&background=2c3e50&color=fff&size=256" alt="Jorlin Jose" class="profile-img">
+            
+            <h1>Jorlin Jose</h1>
+            <p class="subtitle">&lt; Doctoral Researcher | Digital Humanities | Shakespeare Studies /&gt;</p>
+            
+            <div class="social-links">
+                <a href="mailto:jorlinparackal@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/jorlinjose/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://orcid.org/0000-0003-4342-9133" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+                <a href="https://www.researchgate.net/profile/Jorlin-Jose" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a Doctoral Researcher at the <strong>Indian Institute of Space Science and Technology (IIST)</strong>, Thiruvananthapuram. My work sits at the intersection of literary studies and digital culture.</p>
+            <br>
+            <p>My current research, <em>"Theorising Identities in Digital Space,"</em> investigates how filters, avatars, and the Metaverse reshape our understanding of the body and self. Beyond the digital, I am deeply rooted in theatre and performance studies, having explored the "Subaltern Tempests" of Shakespeare in Indian contexts.</p>
+            <br>
+            <div>
+                <span class="tag">Digital Humanities</span>
+                <span class="tag">Shakespeare Studies</span>
+                <span class="tag">Cultural Studies</span>
+                <span class="tag">Ludic Cultures</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <div class="container">
+            <h2>Selected Publications</h2>
+
+            <div class="pub-item">
+                <span class="date">2025</span>
+                <span class="pub-title">"Theorising Identities in Digital Space: Filters, Avatars and Evolving Ludic Cultures"</span>
+                <span class="pub-journal">Digital Crossroads: Integrating Humanities, Science and Technology. Ed. 1, pp. 62-71.</span>
+                <br><a href="https://doi.org/10.9734/bpi/mono/978-93-48859-10-5/CH6" style="font-size: 0.85rem;">[View DOI]</a>
+            </div>
+
+            <div class="pub-item">
+                <span class="date">2024</span>
+                <span class="pub-title">"Examining Kerala's Theatrical Landscape: Tracing the Trajectory of Women Performers on Stage"</span>
+                <span class="pub-journal">Assonance, no. 24, pp. 71-78. (Co-authored with Abhirami Jayaraj)</span>
+            </div>
+
+            <div class="pub-item">
+                <span class="date">2022</span>
+                <span class="pub-title">"Theatre and School Classrooms: A Study on Bringing Theatre as a Teaching Tool in the Classrooms of Kerala"</span>
+                <span class="pub-journal">Bhairavi, vol. 24, pp. 253-259.</span>
+            </div>
+
+            <div class="pub-item">
+                <span class="date">2020</span>
+                <span class="pub-title">"Subaltern Tempests: Subverting the Canon to Voice the Margins"</span>
+                <span class="pub-journal">Studies in Indian Place Names, vol. 40, no. 50.</span>
+            </div>
+
+            <div class="pub-item">
+                <span class="date">2020</span>
+                <span class="pub-title">"Transdisciplinarity as a Protest in Talatum: Situating Circus in a Theatre Space"</span>
+                <span class="pub-journal">Navajyoti, International Journal of Multi-Disciplinary Research, vol. 5.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="conferences">
+        <div class="container">
+            <h2>Talks & Conferences</h2>
+            
+            <div class="timeline-item">
+                <span class="date">Aug 2025 | Keynote</span>
+                <h3>From Reading to Rendering: Code Creator and Community in the Generative Turn</h3>
+                <p>National Students Seminar on Digital Humanities, Reva University, Bengaluru.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="date">Jan 2025 | Paper Presentation</span>
+                <h3>Tempests from Kerala: Shakespeare in Indian Theatrical Tradition</h3>
+                <p>International Conference on Keralan Shakespeares, Dayapuram Institute.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="date">Dec 2024 | Paper Presentation</span>
+                <h3>Memes and H-Pop: Exploring the New Folk in Digital Popular Culture</h3>
+                <p>DHARTI Biennial Conference, IIT Jodhpur.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Teaching & Experience</h2>
+            
+            <div class="timeline-item">
+                <span class="date">2025 - 2026</span>
+                <h3>Teaching Assistant</h3>
+                <p><strong>IIST Thiruvananthapuram (NPTEL SWAYAM)</strong><br>
+                Course: Science Fiction Studies by Dr. Gigy J Alex.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="date">2021 - 2022</span>
+                <h3>Assistant Professor</h3>
+                <p><strong>Mary Matha College of Arts & Science, Tamil Nadu</strong><br>
+                Department of English.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>PhD in English</strong> (Ongoing) - Indian Institute of Space Science and Technology (IIST)</li>
+                <li><strong>UGC NET in English</strong> - Qualified 2020, 2023, 2024</li>
+                <li><strong>MA English & Comparative Literature</strong> - Central University of Kerala (2020)</li>
+                <li><strong>BA English Language & Literature</strong> - Mahatma Gandhi University (2018)</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jorlin Jose. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
