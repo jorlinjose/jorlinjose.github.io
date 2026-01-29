@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="google-site-verification" content="YSP3q2SZaWzI5yIbnlaSOoDmGoOolpTOVDfS8rQ7piY" />
-    
     <meta name="google-site-verification" content="96yDOYK2U2y-hpVOCBI_eiRWf03Uw2prYcWbsc90pNU" />
-    
     <link rel="canonical" href="https://jorlin.in/" />
+
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
 
-    <title>JO</title>
+    <title>JO | Jorlin Jose</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,16 +47,31 @@
         .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
         section { padding: 60px 0; border-bottom: 1px solid #e0e0e0; }
         
+        /* --- NAVIGATION BAR (NEW) --- */
+        .top-nav {
+            display: flex;
+            justify-content: flex-end; /* Aligns links to the right */
+            padding-top: 20px;
+            font-family: var(--code-font);
+            font-size: 0.9rem;
+        }
+        .top-nav a {
+            margin-left: 30px;
+            color: #666;
+            font-weight: 600;
+            position: relative;
+        }
+        .top-nav a:hover { color: var(--highlight-color); }
+        
         /* --- TYPOGRAPHY --- */
         h1, h2, h3 { font-family: var(--serif-font); color: var(--accent-color); }
         h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
         h2 { font-size: 1.8rem; margin-bottom: 1.5rem; border-left: 4px solid var(--highlight-color); padding-left: 15px; }
         h3 { font-size: 1.2rem; font-weight: 700; }
-        .subtitle { font-family: var(--code-font); color: #666; font-size: 0.9rem; }
         
-        /* --- HERO SECTION --- */
+        /* --- HEADER SECTION --- */
         header {
-            padding: 80px 0;
+            padding: 40px 0 80px; /* Reduced top padding to make room for Nav */
             text-align: center;
             background: #fff;
         }
@@ -65,14 +79,27 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background-color: #ddd; /* Placeholder color */
-            margin: 0 auto 20px;
+            background-color: #ddd;
+            margin: 20px auto 20px;
             object-fit: cover;
             border: 3px solid var(--bg-color);
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .social-links { margin-top: 20px; }
         .social-links a { margin: 0 10px; font-size: 1.5rem; color: #555; }
+        
+        /* CV Button Style */
+        .cv-btn {
+            display: inline-block;
+            margin-top: 25px;
+            font-size: 0.9rem; 
+            border: 2px solid #2c3e50; 
+            padding: 8px 18px; 
+            border-radius: 5px; 
+            color: #2c3e50; 
+            font-weight: 600;
+        }
+        .cv-btn:hover { background: #2c3e50; color: #fff; }
 
         /* --- CONTENT LISTS --- */
         .timeline-item, .pub-item { margin-bottom: 25px; }
@@ -99,6 +126,9 @@
         @media (max-width: 600px) {
             h1 { font-size: 2rem; }
             .container { padding: 0 15px; }
+            /* On mobile, center the nav links */
+            .top-nav { justify-content: center; margin-bottom: 10px; }
+            .top-nav a { margin: 0 10px; }
         }
     </style>
 </head>
@@ -106,7 +136,14 @@
 
     <header>
         <div class="container">
-            <img src="0058.jpg" alt="0058.jpg" class="profile-img">
+            <nav class="top-nav">
+                <a href="#about">About</a>
+                <a href="#publications">Research</a>
+                <a href="#conferences">Talks</a>
+                <a href="https://blog.jorlin.in" target="_blank">Blog <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i></a>
+            </nav>
+
+            <img src="0058.jpg" alt="Jorlin Jose" class="profile-img">
             
             <h1>Jorlin Jose</h1>
             
@@ -117,7 +154,7 @@
                 <a href="https://www.researchgate.net/profile/Jorlin-Jose" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
                 <a href="https://www.instagram.com/jo_jorlin/?hl=en" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
-        </div>
+
     </header>
 
     <section id="about">
@@ -179,7 +216,7 @@
             <div class="timeline-item">
                 <span class="date">Nov 27, 2025 | Panel Discussion</span>
                 <h3>Doing Digital Humanities in India: Opportunities and Challenges</h3>
-                <p>Digital Humanities in Practice: Tools, Methods, Applications (Workshop), NIT Calicut.</p>
+                <p>Digital Humanities in Practice: Tools, Methods, Applications (ANRF Sponsored Workshop), NIT Calicut.</p>
             </div>
 
             <div class="timeline-item">
@@ -258,3 +295,4 @@
 
 </body>
 </html>
+
